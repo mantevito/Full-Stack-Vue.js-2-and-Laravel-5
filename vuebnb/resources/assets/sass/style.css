@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #484848;
@@ -5,13 +9,25 @@ body {
   margin: 0;
 }
 
-.container {
+.listing-container {
   margin: 0 auto;
+  padding: 0 12px;
 }
 
 @media (min-width: 744px) {
-  .container {
+  .listing-container {
     width: 696px;
+  }
+}
+
+.home-container {
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+@media (min-width: 1131px) {
+  .home-container {
+    width: 1080px;
   }
 }
 
@@ -211,4 +227,32 @@ body.modal-open {
   z-index: 1000;
   font-weight: 100;
   line-height: 1;
+}
+
+.saved-container {
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+@media (min-width: 1131px) {
+  .saved-container {
+    width: 1095px;
+    padding-left: 40px;
+    margin-bottom: -10px;
+  }
+}
+
+.login-container {
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+@media (min-width: 374px) {
+  .login-container {
+    width: 350px;
+  }
+}
+
+input[type=text] {
+  -webkit-appearance: none;
 }
